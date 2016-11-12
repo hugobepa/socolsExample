@@ -1,0 +1,6 @@
+
+http://www.it.uc3m.es/celeste/docencia/cr/2003/PracticaSocketsUDP/
+
+Para probar como funciona este sencillo programa, debereis arrancar primero el servidor, que se quedará a la escucha de peticiones, y después el cliente. 
+Como podeis comprobar el cliente envía una única petición y finaliza; y el servidor se queda esperando por nuevas peticiones.
+Modificad el programa cliente anterior, para que envíe al servidor los mensajes que introduce un usario por la entrada estándar. 

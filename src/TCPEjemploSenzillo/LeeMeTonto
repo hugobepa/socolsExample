@@ -1,0 +1,22 @@
+http://www.codifica.me/codigo/java/creacion-de-socket-tcp-en-java/
+
+
+Basicamente, este es el funcionamiento de los Socket que necesitamos para una conexión TCP. En el que podemos distinguir dos tipos de Socket el del Servidor y el del Cliente.
+
+La creación del socket en el servidor se remite a crear el socket, indicar por que puerto se harán las escuchas y esperar a la llamada de un cliente para aceptar la conexión, en cambio un cliente creará el socket e indicará donde se encuentra y por que puerto quiere conectarse, de está forma Cliente y Servidor crearán una conexión.
+
+Servidor:
+
+Para crear los socket se crea un objeto del tipo ServerSocket, este método pertenece a la clase java.net.Serversocket
+
+Una vez que hemos creado el objeto socket mandamos un parámetro que indicará el puerto por el que se realzará las comunicaciones.
+
+Para realizar una conexión entre Cliente-Servidor, el servidor usará el método socket.accept para confirmar que se ha iniciado la conexión.
+
+Cliente:
+
+Primero crea un objeto del tipo Socket que pertenece a la clase java.net.Serversocket,
+
+Después se obtiene un objeto InetAddress, y usando el método getByName le indicamos donde se va a ejecutar el cliente, en nuestro caso indicamos que será en localhost.
+
+Finalmente creamos un objeto de tipo socket al que pasaremos la dirección donde se está ejecutando el cliente, y el puerto por donde se conectará al servidor.
